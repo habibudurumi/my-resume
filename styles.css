@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #ccc;
+}
+
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+header > h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #000;
+    padding: .5rem 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header > p {
+    font-size: 1.2rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.adrss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+ a {
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.icons {
+    margin: 1rem .5rem;
+}
+
+.icon {
+    color: #808080;
+}
+
+.icon:hover {
+    color:#333;
+}
+
+/*show case area */
+
+.showcase {
+    margin: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:2rem;
+}
+
+main h1 {
+    text-align: center;
+    margin: 5rem auto;
+    color: #333;
+}
+
+ .showcase a {
+    color: #333;
+    font-style: italic;
+    padding: 10px;
+    margin: 0;
+}
+
+.showcase a:hover {
+    color: tomato;
+}
+
+.education, .skills, .project {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    height: fit-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 9, .9);
+}
+
+.education:hover,
+.skills:hover,
+.project:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 9, .9);
+}
+
+h2 {
+    color: #333;
+    padding-top: 1rem;
+}
+
+h3 {
+    color: rgb(78, 78, 78);
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/* footer */
+footer {
+    margin: 4rem 3rem;
+}
+
+footer h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.sponsors {
+    text-align: center;
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sponsors img {
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 3px 3px rgba(78, 78, 78, .3);
+    border-radius: 4px;
+    transition: transform .5s ease;
+}
+
+.sponsors img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    text-align: center;
+    color: #707070;
+    font-style: unset;
+}
+
+@media (max-width: 760px){
+    header {
+        margin: 1rem auto;
+        padding: 0;
+        width: 80%;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .showcase {
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding: .5rem;
+        font-size: .9rem;
+    }
+
+    footer h2 {
+        font-size: 1.3rem;
+    }
+
+    .sponsors img {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: .8rem;
+    }
+}
